@@ -25,8 +25,8 @@
   </tr>
 </table>
 
-### nodeMCU
-Firmware : 
+### Firmware nodeMCU
+Testé avec la version [0.9.5 du 17/01/2015](https://github.com/nodemcu/nodemcu-firmware/blob/master/pre_build/0.9.5/nodemcu_20150107.bin).
 
 ## Exemples de code
 ### LCD
