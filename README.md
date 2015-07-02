@@ -62,10 +62,37 @@ Enregistreur de température et d'humidité publiant les relevés sur [ThingSpea
   
 
 ### 2. [MQTT LED](https://github.com/ksahnine/nodemcu-projects/tree/master/mqtt-led)
+Allumage / extinction d'une LED via MQTT.
+
+* Configuration du module ESP dans le fichier ``settings.lua``
+  * ``ssid`` : SSID du réseau WiFi
+  * ``passwd`` : mot de passe du réseau WiFi
+  * ``mqtt_host`` : Adresse IP du broker MQTT
+  * ``mqtt_port`` : Port d'écoute du broker MQTT
+  * ``topic_sub`` : Topic auquel s'enregistre le microcontroleur. Les ordres d'allumage/extinction sont publiés sur ce topic, respectivement ``on`` et ``off``. 
+  * ``topic_pub`` : Topic où le microcontroleur publie son statut (connection/adresse IP)
+* Branchement de la LED :
+<table>
+  <tr>
+    <th>LED</th><th>ESP</th>
+  </tr>
+  <tr>
+    <td>Anode</td><td>GPIO2</td>
+  </tr>
+  <tr>
+    <td>Cathode</td><td>GND</td>
+  </tr>
+</table>
+![LED](https://github.com/ksahnine/nodemcu-projects/raw/master/hardware/img/led.png)
 
 ### 3. [LCD](https://github.com/ksahnine/nodemcu-projects/tree/master/lcd)
+Afficheur LCD.
+
 * Branchement de l'afficheur LCD [LCM1602](http://www.ebay.fr/itm/New-Character-LCD-Module-Display-LCM-1602-16X2-HD44780-Blue-Blacklight-/181090708166?pt=LH_DefaultDomain_0&hash=item2a29d8eac6) (module I2C) :
 <table>
+  <tr>
+    <th>LCM-1602</th><th>ESP</th>
+  </tr>
   <tr>
     <td>SDA</td><td>GPIO2</td>
   </tr>
