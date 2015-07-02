@@ -35,10 +35,9 @@ Testé avec la version [0.9.5 du 17/01/2015](https://github.com/nodemcu/nodemcu-
 ## Exemples de code
 ### 1. [Enregistreur de température](https://github.com/ksahnine/nodemcu-projects/tree/master/humidity-temp-logger)
 Enregistreur de température et d'humidité publiant les relevés sur [ThingSpeak](https://thingspeak.com/) :
-<img src="https://github.com/ksahnine/nodemcu-projects/raw/master/hardware/img/ThingSpeak.png" width="50%" height="50%">
+<img src="https://github.com/ksahnine/nodemcu-projects/raw/master/hardware/img/ThingSpeak.png" width="70%" height="70%">
 
 * Branchement du capteur d'humidité et de température DHT11 :
-![DHT11](https://github.com/ksahnine/nodemcu-projects/raw/master/hardware/img/dht11.png) 
 <table>
   <tr>
     <th>DHT11</th><th>ESP</th>
@@ -53,6 +52,8 @@ Enregistreur de température et d'humidité publiant les relevés sur [ThingSpea
     <td>Pin 4</td><td>GND</td>
   </tr>
 </table>
+![DHT11](https://github.com/ksahnine/nodemcu-projects/raw/master/hardware/img/dht11.png) 
+
 * Configuration du module ESP dans le fichier ```settings.lua```
   * ```ssid``` : SSID du réseau WiFi
   * ```passwd``` : mot de passe du réseau WiFi
