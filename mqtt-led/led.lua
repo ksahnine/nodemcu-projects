@@ -15,10 +15,12 @@ m:on("offline", function(con) print ("offline") end)
 m:on("message", function(conn, topic, data)
     print(topic .. ":" )
     if data ~= nil then
-        if (data=="/led/on") then 
+        if (data=="on") then 
             gpio.write(pin,gpio.HIGH) 
         else 
-            gpio.write(pin,gpio.LOW)
+            if (data=="off") then 
+                gpio.write(pin,gpio.LOW)
+            end
         end
 
         m:publish(topic_pub,data,0,0, function(conn) print("sent") end)
