@@ -35,7 +35,7 @@ Testé avec la version [0.9.5 du 17/01/2015](https://github.com/nodemcu/nodemcu-
 ## Exemples de code
 ### 1. [Enregistreur de température](https://github.com/ksahnine/nodemcu-projects/tree/master/humidity-temp-logger)
 Enregistreur de température et d'humidité publiant les relevés sur [ThingSpeak](https://thingspeak.com/) :
-<img src="https://github.com/ksahnine/nodemcu-projects/raw/master/hardware/img/ThingSpeak.png">
+![ThingSpeak](https://github.com/ksahnine/nodemcu-projects/raw/master/hardware/img/ThingSpeak.png)
 
 * Branchement du capteur d'humidité et de température DHT11 :
 <table>
